@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--com.buzzertech.bruz.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="0dp"
+    android:gravity="bottom"
+    app:umanoOverlay="false"
+    app:umanoPanelHeight="25dp"
+    app:umanoParallaxOffset="0dp"
+    app:umanoShadowHeight="0dp"
+    tools:context="com.buzzertech.bruz.downloadActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/wallpaperPre"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:transitionName="transition1"
+            app:srcCompat="@null" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/moreinfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/baseColor"
+        android:clickable="true"
+        android:elevation="16dp"
+        android:focusable="false"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/caretupdrag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/shadeColor"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:id="@+id/caretup"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/caretup" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/moreInfoLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="0dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/moreintext"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.29"
+                android:gravity="center"
+                android:text="More Info"
+                android:textColor="@android:color/white"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/designer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.29"
+                android:fontFamily="sans-serif-light"
+                android:text="Designer:"
+                android:textColor="#353535"
+                android:textSize="25sp"
+                android:typeface="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/setWall"
+                style="@android:style/Widget.Material.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.29"
+                android:enabled="true"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="@string/set_wallpaper"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:typeface="normal" />
+        </LinearLayout>
+
+    </LinearLayout>
+</com.buzzertech.bruz.SlidingUpPanelLayout-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/downloadLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+
+    <ImageView
+        android:id="@+id/wallpaperPre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:transitionName="transition1"
+        app:srcCompat="@null" />
+
+
+    <LinearLayout
+        android:id="@+id/infoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/radius"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="Icon"
+            android:src="@drawable/caretup" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/slideView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/black_transparent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/caretDown"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="false"
+            android:rotation="180"
+            app:srcCompat="@drawable/caretup" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingBottom="25dp">
+
+
+            <LinearLayout
+                android:id="@+id/setWallGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/setWall"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/round_btn"
+                    android:src="@drawable/checkmark" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Set"
+                    android:textAlignment="center"
+                    android:textColor="@color/offWhite" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shareGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2.5dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/shareWall"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:background="@drawable/round_btn"
+                    android:src="@drawable/ic_wall_share" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Share"
+                    android:textAlignment="center"
+                    android:textColor="@color/offWhite" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/downloadWallpaper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2.5dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/downloadWall"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/round_btn"
+                    android:src="@drawable/ic_download" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Download"
+                    android:textAlignment="center"
+                    android:textColor="@color/offWhite" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/detailsGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/detailWall"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:background="@drawable/round_btn"
+                    android:src="@drawable/ic_details" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Details"
+                    android:textAlignment="center"
+                    android:textColor="@color/offWhite" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--SlideView two-->
+
+    <LinearLayout
+        android:id="@+id/slideView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/black_transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="240dp"
+                android:text="Set wallpaper for"
+                android:textColor="@color/offWhite"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="150dp"
+            android:gravity="center">
+
+
+            <LinearLayout
+                android:id="@+id/setGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/setHome"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/round_btn"
+                    android:src="@drawable/ic_home" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Home"
+                    android:textAlignment="center"
+                    android:textColor="@color/offWhite" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setLockGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/setLock"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:background="@drawable/round_btn"
+                    android:src="@drawable/ic_lock" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Lockscreen"
+                    android:textAlignment="center"
+                    android:textColor="@color/offWhite" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/caretDown2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="50dp"
+            android:adjustViewBounds="false"
+            app:srcCompat="@drawable/caretup" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/modalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_transparent"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:id="@+id/closeLay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/detailsDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/dialog"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Designer"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/divider" />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/designersProfile"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_profile"
+                app:civ_border_color="@color/baseColor"
+                app:civ_border_width="0dp"
+                app:civ_shadow="false"
+                app:civ_shadow_color="@android:color/black"
+                app:civ_shadow_radius="10" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/designerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Designer's Name"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/verifiedImage"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_centerInParent="false"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toEndOf="@+id/designerName"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/verified" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/divider" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/sourceBtn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.06"
+                    android:background="@drawable/radius"
+                    android:elevation="17dp"
+                    android:text="Source"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

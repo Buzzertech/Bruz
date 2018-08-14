@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/wallpapers"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:checked="true"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/ic_menu_category"
+            android:title="Category" />
+
+        <item
+            android:id="@+id/nav_pick"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Pick me a Wallpaper" />
+
+        <!--item
+            android:id="@+id/nav_fav"
+            android:icon="@drawable/ic_fav"
+            android:title="Favorites" /-->
+    </group>
+
+    <group android:id="@+id/app">
+
+        <item
+            android:id="@+id/nav_share"
+            android:checkable="true"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Share" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:checkable="true"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Feedback" />
+
+        <item
+            android:id="@+id/nav_rate"
+            android:checkable="true"
+            android:icon="@drawable/ic_nav_rate"
+            android:title="Rate us" />
+        <item
+            android:id="@+id/nav_about"
+            android:checkable="true"
+            android:icon="@drawable/ic_about"
+            android:title="About Us" />
+    </group>
+
+
+
+</menu>

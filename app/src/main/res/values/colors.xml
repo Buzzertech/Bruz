@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Defaults-->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--/Defaults-->
+
+    <!--custom-->
+
+    <color name="baseColor">#2196F3</color>
+    <color name="shadeColor">#1E88E5</color>
+    <color name="black_transparent">#80000000</color>
+    <color name="black_semi_transparent">#CC000000</color>
+    <color name="offWhite">#eeeeee</color>
+    <color name="offGray">#212121</color>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tutorial_bg_2">
+
+    <TextView
+        android:id="@+id/Bruz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bruz?"
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/why"
+        android:layout_alignBottom="@+id/why"
+        android:layout_toEndOf="@+id/why" />
+
+    <TextView
+        android:id="@+id/why"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:text="WHY"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/Bruz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="103dp"
+        android:background="@drawable/circle_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <TextView
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="NO"
+            android:textColor="@color/baseColor"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADS"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/no_ads_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:text="Oh yes! How about an experience which is without any annoying interruptions? Sounds good right, Bruz serves you that experience."
+        android:textAlignment="center"
+        android:textColor="@color/offWhite"
+        android:textSize="12sp" />
+</RelativeLayout>

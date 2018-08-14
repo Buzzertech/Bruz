@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="bruzTheme" parent="bruzTheme.Base"></style>
+
+    <style name="bruzTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/baseColor</item>
+        <item name="colorPrimaryDark">@color/shadeColor</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="colorAccent">@color/baseColor</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="introTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/baseColor</item>
+        <item name="colorPrimaryDark">@color/shadeColor</item>
+        <item name="colorAccent">@color/baseColor</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="downloadTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/baseColor</item>
+        <item name="colorPrimaryDark">@color/shadeColor</item>
+        <item name="colorAccent">@color/baseColor</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <!--item name="android:navigationBarColor">@color/shadeColor</item-->
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="homeTheme" parent="bruzTheme">
+        <item name="colorPrimary">@color/baseColor</item>
+        <item name="colorPrimaryDark">@color/shadeColor</item>
+        <item name="colorAccent">@color/baseColor</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="homeTheme.Launcher">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <style name="bruzTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="bruzTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

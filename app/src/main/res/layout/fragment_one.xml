@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tutorial_bg_1">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="105dp"
+        android:text="Welcome"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/welcomepara"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/welcome"
+        android:layout_below="@+id/welcome"
+        android:layout_marginTop="9dp"
+        android:text="to the world of amazing wallpapers that are about drop the jaws of the onlookers peaking at your device." />
+
+</RelativeLayout>

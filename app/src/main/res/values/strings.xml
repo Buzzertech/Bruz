@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Bruz</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="set_wallpaper">Set Wallpaper</string>
+    <string name="btn_ok">Ok</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="info">info</string>
+    <string name="unknown_designer">Unknown Designer</string>
+    <string name="source_button">Unknown Source</string>
+    <string name="title_activity_category">Categories</string>
+
+    <!--String of Categories-->
+    <string name="cat_all">All</string>
+    <string name="cat_best">Best</string>
+    <string name="cat_animals">Animals</string>
+    <string name="cat_cars">Cars</string>
+    <string name="cat_quotes">Quotes</string>
+    <string name="cat_nature">Nature</string>
+    <string name="cat_cities">Cities and Countries</string>
+    <string name="cat_love">Love</string>
+    <string name="cat_sports">Sports</string>
+    <string name="cat_movies">Movies</string>
+    <string name="title_activity_common_category_view">CommonCategoryView</string>
+    <string name="errorMsg">Currently no wallpaper is available in this category. We’ll soon add more wallpapers to this list :)</string>
+    <string name="aboutBruz">Bruz is a wallpaper app created by Buzzertech. The motive of this app is to provide you, awesome people, with some great wallpapers to customize your android device and to give it an awesome look. We also promote that apps should be ad free and should not disturb the user experience by annoying advertisements.</string>
+    <string name="cat_animals_sen">animals</string>
+    <string name="cat_best_sen">best</string>
+    <string name="cat_cars_sen">cars</string>
+    <string name="cat_cities_sen">cities</string>
+
+</resources>
